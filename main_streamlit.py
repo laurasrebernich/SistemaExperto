@@ -1,19 +1,6 @@
 # main_streamlit.py
 #streamlit run C:\Users\inpi\Downloads\asesoria_autos\main_streamlit.py
 
-import collections
-import collections.abc
-
-# Parche para compatibilidad con Python 3.10+
-if not hasattr(collections, "Mapping"):
-    collections.Mapping = collections.abc.Mapping
-if not hasattr(collections, "MutableMapping"):
-    collections.MutableMapping = collections.abc.MutableMapping
-if not hasattr(collections, "Sequence"):
-    collections.Sequence = collections.abc.Sequence
-
-from experta import *
-
 
 import streamlit as st
 from collections import defaultdict
@@ -134,3 +121,4 @@ if st.button("Buscar mi auto ideal", type="primary"):
                     )
 
                     st.markdown(detalles)
+
